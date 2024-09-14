@@ -12,7 +12,7 @@ const AppPro = (): JSX.Element => {
 
 
     return (
-        <SafeAreaView >
+        <SafeAreaView style={styles.container} >
             <View style={styles.container} >
                 <Text style={isdarkMode ? styles.textStyleWhite : styles.textStyleBlack} >AppPro</Text>
             </View>
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        minHeight: 300
+        justifyContent: 'center'
     },
     textStyleWhite: {
         color: 'white',
